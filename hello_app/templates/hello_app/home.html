@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+    {% if content %}
+        <h1>{{ content.text }}</h1>
+        <img src="{{ content.image.url }}" alt="Homepage Image" width="500">
+    {% else %}
+        <h1>No content available</h1>
+    {% endif %}
+</body>
+</html>
